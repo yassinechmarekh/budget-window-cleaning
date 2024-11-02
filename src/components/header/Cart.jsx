@@ -10,8 +10,8 @@ export default function Cart({ statusCart, setstatusCart }) {
   return (
     <div
       className={`fixed top-0 ${
-        statusCart ? "right-0" : "right-[-100%]"
-      } bottom-0 w-96 transition-all duration-300 ease-in-out bg-blue-50 border-l p-6 z-50`}
+        statusCart ? "right-0" : "right-[-150%]"
+      } bottom-0 w-full sm:w-96 transition-all duration-300 ease-in-out bg-blue-50 border-l p-6 z-50`}
     >
       <div className="flex flex-col items-center justify-between h-full">
         <button className="ml-auto" onClick={() => setstatusCart(false)}>
@@ -32,7 +32,7 @@ export default function Cart({ statusCart, setstatusCart }) {
         </p>
         <div className="text-center">
           <h3 className="text-2xl font-bold text-blue-900">Contact info</h3>
-          <ul className="mt-4 text-slate-600">
+          <ul className="mt-2 sm:mt-4 text-slate-600">
             <li className="cart-info-list">
               <a href="tel:+14409341545">+1 440 934-1545</a>
             </li>
@@ -50,7 +50,7 @@ export default function Cart({ statusCart, setstatusCart }) {
         </div>
         <div className="text-center">
           <h3 className="text-2xl font-bold text-blue-900">Official Address</h3>
-          <div className="mt-4 text-slate-600 cart-info-list">
+          <div className="mt-2 sm:mt-4 text-slate-600 cart-info-list">
             <a href="https://maps.app.goo.gl/gRBLVwviLtySaXSeA">
               5210 Parkhurst Dr, Sheffield, OH, United States, Ohio
             </a>
