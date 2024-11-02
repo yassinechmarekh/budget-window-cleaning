@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ModalVideo({setmodalVideo}) {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={() => setmodalVideo(false)}>
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-40" onClick={() => setmodalVideo(false)}>
       <div className="w-full max-w-3xl aspect-video">
         <iframe
           className="w-full h-full"

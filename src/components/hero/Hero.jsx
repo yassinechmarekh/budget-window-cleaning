@@ -11,18 +11,18 @@ export default function Hero() {
   return (
     <section className="flex flex-col lg:flex-row">
       <div className="w-full lg:w-1/2 bg-blue-100 relative">
-        <div className="h-40 sm:h-60 2xl:h-72 absolute left-0 bottom-0">
+        <div className="h-40 sm:h-60 2xl:h-72 absolute left-0 bottom-0 z-0">
           <img src={cleaningMop} alt="" className="h-full opacity-30" />
         </div>
         <div className="pt-10 pb-20 sm:py-20">
           <div className="container">
             <div className="flex items-center gap-1">
               <img src={cleaningCheck} alt="cleaning stars" className="w-6" />
-              <h4 className="text-xl sm:text-2xl text-blue-500 font-semibold">
+              <h4 className="text-xl sm:text-2xl text-blue-500 font-semibold second-font">
                 We are budget window cleaning
               </h4>
             </div>
-            <h1 className="mt-1 mb-4 text-blue-900 text-4xl sm:text-6xl font-bold">
+            <h1 className="mt-1 mb-4 text-blue-900 text-4xl sm:text-6xl font-bold second-font">
               We are the best cleaning agency
             </h1>
             <p className="text-slate-600 text-sm sm:text-base">
@@ -33,7 +33,7 @@ export default function Hero() {
             <div className="flex items-center gap-4 mt-4">
               <a
                 href="#"
-                className="py-2 px-4 bg-blue-600 hover:bg-blue-900 text-white flex items-center gap-2 rounded-3xl transition-colors duration-300 ease-in-out"
+                className="py-2 px-4 bg-blue-600 hover:bg-blue-900 text-white flex items-center gap-2 rounded-3xl transition-colors duration-300 ease-in-out z-10"
               >
                 <span className="ml-1 capitalize text-base sm:text-lg">
                   start now
@@ -41,7 +41,7 @@ export default function Hero() {
                 <MdArrowOutward size={20} />
               </a>
               <button
-                className="p-3 bg-blue-900 text-white rounded-full"
+                className="p-3 bg-blue-900 hover:bg-blue-800 text-white rounded-full transition-colors duration-300 ease-in-out"
                 onClick={() => setmodalVideo(true)}
               >
                 <FaPlay size={16} />
