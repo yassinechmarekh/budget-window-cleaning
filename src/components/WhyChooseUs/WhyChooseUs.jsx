@@ -5,7 +5,7 @@ import Arguments from "./Arguments";
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-white my-10">
+    <section className="bg-white mt-10 lg:mt-20">
       <div className="container">
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="w-full lg:w-1/2">

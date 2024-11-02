@@ -33,9 +33,9 @@ export default function Hero() {
             <div className="flex items-center gap-4 mt-4">
               <a
                 href="#"
-                className="py-2 px-4 bg-blue-600 hover:bg-blue-900 text-white flex items-center gap-2 rounded-3xl transition-colors duration-300 ease-in-out z-10"
+                className="main-btn z-10"
               >
-                <span className="ml-1 capitalize text-base sm:text-lg">
+                <span>
                   start now
                 </span>
                 <MdArrowOutward size={20} />
