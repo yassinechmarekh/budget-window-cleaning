@@ -47,7 +47,7 @@ export default function Testimoniels() {
         }
     ];
   return (
-    <section className="pt-10 bg-white">
+    <section className="pt-10 bg-white" id="testimonials">
       <div className="container">
         <div className="flex justify-between items-center">
           <div className="w-full sm:w-1/2">
@@ -61,7 +61,7 @@ export default function Testimoniels() {
               We are very happy for client’s reviews.
             </h1>
           </div>
-          <a href="#" className="main-btn hidden sm:flex">
+          <a href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364" target="_blank" className="main-btn hidden sm:flex">
             <span>start now</span>
             <MdArrowOutward size={20} />
           </a>

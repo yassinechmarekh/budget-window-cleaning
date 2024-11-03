@@ -1,33 +1,47 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import TopHeader from "./TopHeader";
 import logo from "/icon.svg";
 import { IoMdMenu } from "react-icons/io";
 import { FaPhoneVolume } from "react-icons/fa6";
 import Cart from "./Cart";
 
-export default function Header() {
-  const menuLinks = [
-    "home",
-    "why choose us ?",
-    "services",
-    "testimoniels",
-    "faq",
-  ];
+export default function Header({ links }) {
   const [currentMenu, setcurrentMenu] = useState("home");
   const [statusCart, setstatusCart] = useState(false);
   const handleCurrentMenu = (link) => {
     setcurrentMenu(link);
   };
 
+  const [showTopHeader, setShowTopHeader] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopHeader(window.scrollY < 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="bg-blue-950">
+    <header
+      className={`bg-blue-950 transition-all duration-300 ease-in-out ${
+        showTopHeader
+          ? ""
+          : "fixed top-0 left-0 right-0 z-30"
+      }`}
+    >
       {statusCart && (
         <div
           className="fixed inset-0 bg-[#00000080] z-40"
           onClick={() => setstatusCart(false)}
         ></div>
       )}
-      <TopHeader />
+      {showTopHeader && <TopHeader />}
+
       <div className="border-t border-slate-500">
         <div className="container px-0 pl-4 xl:pl-8 2xl:pl-16">
           <div className="flex justify-between">
@@ -42,7 +56,7 @@ export default function Header() {
               </h1>
             </a>
             <ul className="hidden xl:flex items-center gap-8 text-slate-300 capitalize">
-              {menuLinks.map((link, index) => (
+              {links.map((link, index) => (
                 <li
                   key={index}
                   className={`hover:text-blue-500 transition-all duration-200 ease-in-out ${

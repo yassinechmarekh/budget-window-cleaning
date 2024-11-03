@@ -42,7 +42,7 @@ export default function Services() {
     },
   ];
   return (
-    <section className="py-10 bg-blue-100 mt-10 lg:mt-20">
+    <section className="py-10 bg-blue-100 mt-10 lg:mt-20" id="services">
       <div className="container">
         <div className="flex justify-between items-center mb-8">
           <div className="w-full sm:w-1/2">
@@ -56,7 +56,7 @@ export default function Services() {
               We work many fields to clean your surrounding area
             </h1>
           </div>
-          <a href="#" className="main-btn hidden sm:flex">
+          <a href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364" target="_blank" className="main-btn hidden sm:flex">
             <span>start now</span>
             <MdArrowOutward size={20} />
           </a>

@@ -51,19 +51,19 @@ export default function Cart({ statusCart, setstatusCart }) {
         <div className="text-center">
           <h3 className="text-2xl font-bold text-blue-900">Official Address</h3>
           <div className="mt-2 sm:mt-4 text-slate-600 cart-info-list">
-            <a href="https://maps.app.goo.gl/gRBLVwviLtySaXSeA">
+            <a href="https://maps.app.goo.gl/gRBLVwviLtySaXSeA" target="_blank">
               5210 Parkhurst Dr, Sheffield, OH, United States, Ohio
             </a>
           </div>
         </div>
         <div className="flex gap-4">
-          <a href="#" className="cart-social-list">
+          <a href="https://www.facebook.com/BudgetWindowCleaningOhio/" target="_blank" className="cart-social-list">
             <FaFacebookF size={16} />
           </a>
-          <a href="#" className="cart-social-list">
+          <a href="https://www.instagram.com/cleaningbudget/" target="_blank" className="cart-social-list">
             <FaInstagram size={16} />
           </a>
-          <a href="#" className="cart-social-list">
+          <a href="https://www.youtube.com/@BudgetWC" target="_blank" className="cart-social-list">
             <FaYoutube size={16} />
           </a>
           <a href="#" className="cart-social-list">

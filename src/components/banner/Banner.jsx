@@ -18,7 +18,7 @@ export default function Banner() {
               We love what we do and we do it with passion. We value the
               experimentation of the message and smart incentives.
             </p>
-            <a href="#" className="main-btn w-fit hover:bg-blue-700">
+            <a href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364" target="_blank" className="main-btn w-fit hover:bg-blue-700">
               <span>start now</span>
               <MdArrowOutward size={20} />
             </a>

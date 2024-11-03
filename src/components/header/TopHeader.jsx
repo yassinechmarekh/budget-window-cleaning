@@ -42,13 +42,13 @@ export default function () {
               </div>
             </li>
             <li className="text-slate-300 flex items-center gap-3">
-              <a href="#" className="navbar-social-link">
+              <a href="https://www.facebook.com/BudgetWindowCleaningOhio/" target="_blank" className="navbar-social-link">
                 <FaFacebookF size={14} />
               </a>
-              <a href="#" className="navbar-social-link">
+              <a href="https://www.instagram.com/cleaningbudget/" target="_blank" className="navbar-social-link">
                 <FaInstagram size={16} />
               </a>
-              <a href="#" className="navbar-social-link">
+              <a href="https://www.youtube.com/@BudgetWC" target="_blank" className="navbar-social-link">
                 <FaYoutube size={18} />
               </a>
               <a href="#" className="navbar-social-link">

@@ -9,7 +9,7 @@ import { FaPlay } from "react-icons/fa";
 export default function Hero() {
   const [modalVideo, setmodalVideo] = useState(false);
   return (
-    <section className="flex flex-col lg:flex-row">
+    <section className="flex flex-col lg:flex-row" id="home">
       <div className="w-full lg:w-1/2 bg-blue-100 relative">
         <div className="h-40 sm:h-60 2xl:h-72 absolute left-0 bottom-0 z-0">
           <img src={cleaningMop} alt="" className="h-full opacity-30" />
@@ -32,7 +32,8 @@ export default function Hero() {
             </p>
             <div className="flex items-center gap-4 mt-4">
               <a
-                href="#"
+                href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364"
+                target="_blank"
                 className="main-btn z-10"
               >
                 <span>

@@ -39,7 +39,7 @@ export default function Faq() {
     },
   ];
   return (
-    <section className="bg-blue-100 py-10">
+    <section className="bg-blue-100 py-10" id="faq">
       <div className="container">
         <div className="w-full lg:w-2/3 mx-auto text-center mb-8">
           <div className="flex items-center gap-1 w-fit mx-auto">

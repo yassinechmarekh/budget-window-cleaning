@@ -5,7 +5,7 @@ import Arguments from "./Arguments";
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-white mt-10 lg:mt-20">
+    <section className="bg-white mt-10 lg:mt-20" id="whychooseus?">
       <div className="container">
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="w-full lg:w-1/2">
@@ -19,7 +19,7 @@ export default function WhyChooseUs() {
               We work many fields to clean your surrounding area
             </h1>
             <a
-              href="#"
+              href="#faq"
               className="py-2 px-4 bg-transparent hover:bg-blue-600 text-blue-600 hover:text-white flex items-center gap-1 border border-blue-600 rounded-3xl w-fit transition-colors duration-300 ease-in-out"
             >
               <span>know more</span>
