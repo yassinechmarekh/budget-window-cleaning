@@ -1,3 +1,4 @@
+import Banner from "./components/banner/banner"
 import Header from "./components/header/header"
 import Hero from "./components/hero/Hero"
 import Services from "./components/services/Services"
@@ -11,6 +12,7 @@ function App() {
      <Hero/>
      <WhyChooseUs/>
      <Services/>
+     <Banner/>
     </>
   )
 }
