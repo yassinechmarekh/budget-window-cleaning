@@ -1,4 +1,4 @@
-import Banner from "./components/banner/banner";
+import Banner from "./components/banner/Banner";
 import Faq from "./components/faq/Faq";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
