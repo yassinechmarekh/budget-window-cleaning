@@ -1,4 +1,5 @@
 import Banner from "./components/banner/banner"
+import Faq from "./components/faq/Faq"
 import Header from "./components/header/header"
 import Hero from "./components/hero/Hero"
 import Services from "./components/services/Services"
@@ -15,6 +16,7 @@ function App() {
      <Services/>
      <Banner/>
      <Testimoniels/>
+     <Faq/>
     </>
   )
 }

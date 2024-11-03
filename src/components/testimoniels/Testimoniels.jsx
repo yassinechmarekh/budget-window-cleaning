@@ -47,7 +47,7 @@ export default function Testimoniels() {
         }
     ];
   return (
-    <section className="py-10 bg-white">
+    <section className="pt-10 bg-white">
       <div className="container">
         <div className="flex justify-between items-center">
           <div className="w-full sm:w-1/2">
