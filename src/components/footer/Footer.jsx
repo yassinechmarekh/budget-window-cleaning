@@ -13,7 +13,7 @@ export default function Footer({ links }) {
     <footer className="bg-blue-900">
       <div className="container">
         <div className="pt-10 pb-6">
-          <div className="grid grid-cols-[350px_1fr_1fr_1fr] gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[300px_1fr_1fr_1fr] xl:grid-cols-[350px_1fr_1fr_1fr] gap-8">
             <div>
               <a
                 href="/"
@@ -112,8 +112,8 @@ export default function Footer({ links }) {
             </div>
           </div>
         </div>
-        <div className="py-3 border-t border-slate-500 flex justify-between">
-          <p className="text-slate-300">
+        <div className="py-3 border-t border-slate-500 flex flex-col lg:flex-row lg:justify-between gap-3">
+          <p className="text-slate-300 text-center">
             &copy; 2024{" "}
             <span className="text-blue-300 font-bold capitalize">
               budget window cleaning
@@ -126,7 +126,7 @@ export default function Footer({ links }) {
               Yassine_ChM
             </a>
           </p>
-          <ul className="flex gap-4">
+          <ul className="flex gap-4 justify-center">
             <li className="footer-social-list">
               <a href="https://www.facebook.com/BudgetWindowCleaningOhio/" target="_blank"><FaFacebookF size={20} /></a>
             </li>
