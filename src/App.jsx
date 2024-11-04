@@ -6,6 +6,7 @@ import Services from "./components/services/Services";
 import Testimoniels from "./components/testimoniels/Testimoniels";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import Footer from "./components/footer/Footer";
+import Loader from "./Loader";
 
 import { motion } from "framer-motion"
 
@@ -36,8 +37,21 @@ function App() {
       behavior: "smooth",
     });
   };
+  const [showLoader, setShowLoader] = useState(false);
+  useEffect(()=>{
+    const handleLoad = () => {
+      setShowLoader(false);
+    };
+
+    window.addEventListener('load', handleLoad);
+    
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+  },[])
   return (
     <>
+      {showLoader && <Loader/>}
       {showBtnTop && (
         <motion.span
           className="btn-back-top"
