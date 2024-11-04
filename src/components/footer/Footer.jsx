@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import logo from "/icon.svg";
 
@@ -14,7 +15,11 @@ export default function Footer({ links }) {
       <div className="container">
         <div className="pt-10 pb-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[300px_1fr_1fr_1fr] xl:grid-cols-[350px_1fr_1fr_1fr] gap-8">
-            <div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
               <a
                 href="/"
                 className="py-2 pr-4 text-white text-xl font-bold flex items-center"
@@ -36,8 +41,12 @@ export default function Footer({ links }) {
                   <li>Sunday: CLOSED</li>
                 </ul>
               </div>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
               <h2 className="footer-title">quick links</h2>
               <ul className="mt-4 leading-8">
                 {links.map((link, index) => (
@@ -48,8 +57,12 @@ export default function Footer({ links }) {
                   </li>
                 ))}
               </ul>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
               <h2 className="footer-title">What we do?</h2>
               <ul className="mt-4 leading-8">
                 <li className="footer-list-links">
@@ -71,8 +84,12 @@ export default function Footer({ links }) {
                   <a href="#services">Roof Cleaning</a>
                 </li>
               </ul>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
               <h2 className="footer-title">Contact info</h2>
               <ul className="mt-4">
                 <li className="footer-contactinfo-list">
@@ -80,7 +97,11 @@ export default function Footer({ links }) {
                     <FaMapMarkerAlt size={18} className="text-blue-300" />
                     <h4 className="footer-contactinfo-subtitle">address :</h4>
                   </div>
-                  <a href="https://maps.app.goo.gl/gRBLVwviLtySaXSeA" target="_blank" className="footer-contactinfo-text">
+                  <a
+                    href="https://maps.app.goo.gl/gRBLVwviLtySaXSeA"
+                    target="_blank"
+                    className="footer-contactinfo-text"
+                  >
                     5210 Parkhurst Dr, Sheffield, OH, United States, Ohio
                   </a>
                 </li>
@@ -109,10 +130,15 @@ export default function Footer({ links }) {
                   </a>
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
         </div>
-        <div className="py-3 border-t border-slate-500 flex flex-col lg:flex-row lg:justify-between gap-3">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="py-3 border-t border-slate-500 flex flex-col lg:flex-row lg:justify-between gap-3"
+        >
           <p className="text-slate-300 text-center">
             &copy; 2024{" "}
             <span className="text-blue-300 font-bold capitalize">
@@ -120,7 +146,8 @@ export default function Footer({ links }) {
             </span>
             , All Right Reserved. Designed By{" "}
             <a
-              href="https://yassine-chmarekh.vercel.app/" target="_blank"
+              href="https://yassine-chmarekh.vercel.app/"
+              target="_blank"
               className="text-white font-semibold hover:text-blue-300 transition-colors duration-300 ease-in-out"
             >
               Yassine_ChM
@@ -128,19 +155,36 @@ export default function Footer({ links }) {
           </p>
           <ul className="flex gap-4 justify-center">
             <li className="footer-social-list">
-              <a href="https://www.facebook.com/BudgetWindowCleaningOhio/" target="_blank"><FaFacebookF size={20} /></a>
+              <a
+                href="https://www.facebook.com/BudgetWindowCleaningOhio/"
+                target="_blank"
+              >
+                <FaFacebookF size={20} />
+              </a>
             </li>
             <li className="footer-social-list">
-              <a href="https://www.instagram.com/cleaningbudget/" target="_blank"><FaInstagram size={20} /></a>
+              <a
+                href="https://www.instagram.com/cleaningbudget/"
+                target="_blank"
+              >
+                <FaInstagram size={20} />
+              </a>
             </li>
             <li className="footer-social-list">
-              <a href="https://www.youtube.com/@BudgetWC" target="_blank"><FaYoutube size={20} /></a>
+              <a href="https://www.youtube.com/@BudgetWC" target="_blank">
+                <FaYoutube size={20} />
+              </a>
             </li>
             <li className="footer-social-list">
-              <a href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364" target="_blank"><IoChatbox size={20} /></a>
+              <a
+                href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364"
+                target="_blank"
+              >
+                <IoChatbox size={20} />
+              </a>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </footer>
   );

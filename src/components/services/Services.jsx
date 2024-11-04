@@ -1,6 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import { MdOutlineCleaningServices } from "react-icons/md";
 import { MdArrowOutward } from "react-icons/md";
+
 import serviceImg1 from "../../assets/images/services/house-washing.webp";
 import serviceImg2 from "../../assets/images/services/window-cleaning.webp";
 import serviceImg3 from "../../assets/images/services/gutter-cleaning.webp";
@@ -44,7 +47,12 @@ export default function Services() {
   return (
     <section className="py-10 bg-blue-100 mt-10 lg:mt-20" id="services">
       <div className="container">
-        <div className="flex justify-between items-center mb-8">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="flex justify-between items-center mb-8"
+        >
           <div className="w-full sm:w-1/2">
             <div className="flex items-center gap-1">
               <MdOutlineCleaningServices size={20} className="text-blue-600" />
@@ -56,19 +64,26 @@ export default function Services() {
               We work many fields to clean your surrounding area
             </h1>
           </div>
-          <a href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364" target="_blank" className="main-btn hidden sm:flex">
+          <motion.a
+            whileTap={{ scale: 0.9 }}
+            href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364"
+            target="_blank"
+            className="main-btn hidden sm:flex"
+          >
             <span>start now</span>
             <MdArrowOutward size={20} />
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
 
         <div className="lg:grid grid-cols-4 gap-6 hidden">
-          {services.map((item,index) => (
-            <div
+          {services.map((item, index) => (
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              whileHover={{ scale: 0.95 }}
               className={`h-80 ${
-                index === 0 || index === 5
-                  ? "col-span-2"
-                  : "col-span-1"
+                index === 0 || index === 5 ? "col-span-2" : "col-span-1"
               } overflow-hidden bg-center bg-cover relative`}
               style={{ backgroundImage: `url(${item.image})` }}
               key={index}
@@ -81,12 +96,12 @@ export default function Services() {
                   {item.subtitle}
                 </h5>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         <div className="hidden sm:grid grid-cols-3 gap-6 lg:hidden">
-          {services.map((item,index) => (
+          {services.map((item, index) => (
             <div
               className={`h-80 ${
                 index === 0 || index === 3 || index === 4
@@ -109,7 +124,7 @@ export default function Services() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:hidden">
-          {services.map((item,index) => (
+          {services.map((item, index) => (
             <div
               className={`h-80 overflow-hidden bg-center bg-cover relative`}
               style={{ backgroundImage: `url(${item.image})` }}

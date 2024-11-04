@@ -1,4 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion"
+
 import TopHeader from "./TopHeader";
 import logo from "/icon.svg";
 import { IoMdMenu } from "react-icons/io";
@@ -74,12 +76,13 @@ export default function Header({ links }) {
             </ul>
             <div className="flex items-center border-l border-slate-500">
               <div className="hidden sm:flex items-center gap-4 px-4">
-                <a
+                <motion.a
                   href="tel:+14409341545"
                   className="p-3 bg-blue-100 rounded-full border-2 border-blue-500 animate-pulse"
+                  whileTap={{ scale:0.9 }}
                 >
                   <FaPhoneVolume size={18} className="text-blue-500" />
-                </a>
+                </motion.a>
                 <div>
                   <span className="block text-slate-300 text-sm">
                     Call us anytime

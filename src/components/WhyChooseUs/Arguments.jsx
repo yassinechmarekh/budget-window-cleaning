@@ -1,4 +1,6 @@
 import React from "react";
+import {motion} from "framer-motion"
+
 import argementImg1 from "../../assets/icons/why choose us/argument-1.svg";
 import argementImg2 from "../../assets/icons/why choose us/argument-2.svg";
 import argementImg3 from "../../assets/icons/why choose us/argument-3.svg";
@@ -34,7 +36,7 @@ export default function Arguments() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
       {argument.map((item,index) => (
-        <div className="hover:scale-95 transition duration-300 ease-in-out" key={index}>
+        <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ duration: 0.3, ease: "easeInOut" }} className="hover:scale-95 transition duration-300 ease-in-out" key={index}>
           <div className="p-3 bg-blue-100 w-20 rounded-2xl">
             <img src={item.image} alt="" className="w-full" />
           </div>
@@ -42,7 +44,7 @@ export default function Arguments() {
             {item.title}
           </h3>
           <p className="mt-2 text-slate-600 text-sm">{item.description}</p>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

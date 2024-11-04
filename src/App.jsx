@@ -7,6 +7,8 @@ import Testimoniels from "./components/testimoniels/Testimoniels";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import Footer from "./components/footer/Footer";
 
+import { motion } from "framer-motion"
+
 import { IoIosArrowUp } from "react-icons/io";
 import { useEffect, useState } from "react";
 
@@ -37,12 +39,15 @@ function App() {
   return (
     <>
       {showBtnTop && (
-        <span
+        <motion.span
           className="btn-back-top"
           onClick={scrollToTop}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
         >
           <IoIosArrowUp size={24} />
-        </span>
+        </motion.span>
       )}
       <Header links={menuLinks} />
       <Hero />

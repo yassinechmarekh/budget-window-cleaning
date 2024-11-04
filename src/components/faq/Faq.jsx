@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import { MdOutlineCleaningServices } from "react-icons/md";
 
@@ -41,7 +42,12 @@ export default function Faq() {
   return (
     <section className="bg-blue-100 py-10" id="faq">
       <div className="container">
-        <div className="w-full lg:w-2/3 mx-auto text-center mb-8">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="w-full lg:w-2/3 mx-auto text-center mb-8"
+        >
           <div className="flex items-center gap-1 w-fit mx-auto">
             <MdOutlineCleaningServices size={20} className="text-blue-600" />
             <h3 className="text-lg text-blue-600 second-font font-semibold uppercase">
@@ -56,8 +62,13 @@ export default function Faq() {
             commodi nam, ea quo ipsa laudantium ad amet voluptatem quae, aut
             similique dignissimos quisquam vel ex corrupti.
           </p>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+        >
           {faq.map((item, index) => (
             <div key={index}>
               <h3 className="text-blue-900 text-xl font-semibold mb-2">
@@ -66,7 +77,7 @@ export default function Faq() {
               <p className="text-slate-600">{item.answer}</p>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
