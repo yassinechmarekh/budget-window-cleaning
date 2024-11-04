@@ -37,17 +37,9 @@ function App() {
       behavior: "smooth",
     });
   };
-  const [showLoader, setShowLoader] = useState(false);
+  const [showLoader, setShowLoader] = useState(true);
   useEffect(()=>{
-    const handleLoad = () => {
       setShowLoader(false);
-    };
-
-    window.addEventListener('load', handleLoad);
-    
-    return () => {
-      window.removeEventListener('load', handleLoad);
-    };
   },[])
   return (
     <>
