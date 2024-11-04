@@ -102,7 +102,11 @@ export default function Services() {
 
         <div className="hidden sm:grid grid-cols-3 gap-6 lg:hidden">
           {services.map((item, index) => (
-            <div
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              whileHover={{ scale: 0.95 }}
               className={`h-80 ${
                 index === 0 || index === 3 || index === 4
                   ? "col-span-2"
@@ -119,13 +123,17 @@ export default function Services() {
                   {item.subtitle}
                 </h5>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:hidden">
           {services.map((item, index) => (
-            <div
+            <motion.div
+              initial={{ rotateY: 0 }}
+              whileInView={{ rotateY: 380 }}
+              transition={{ duration: 1, ease: "easeInOut" }}
+              whileHover={{ scale: 0.95 }}
               className={`h-80 overflow-hidden bg-center bg-cover rounded-lg relative`}
               style={{ backgroundImage: `url(${item.image})` }}
               key={index}
@@ -138,7 +146,7 @@ export default function Services() {
                   {item.subtitle}
                 </h5>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
