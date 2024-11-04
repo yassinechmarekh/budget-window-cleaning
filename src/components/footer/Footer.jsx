@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 import logo from "/icon.svg";
 
@@ -15,10 +14,7 @@ export default function Footer({ links }) {
       <div className="container">
         <div className="pt-10 pb-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[300px_1fr_1fr_1fr] xl:grid-cols-[350px_1fr_1fr_1fr] gap-8">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.5 }}
+            <div
             >
               <a
                 href="/"
@@ -41,11 +37,8 @@ export default function Footer({ links }) {
                   <li>Sunday: CLOSED</li>
                 </ul>
               </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.5 }}
+            </div>
+            <div
             >
               <h2 className="footer-title">quick links</h2>
               <ul className="mt-4 leading-8">
@@ -57,11 +50,8 @@ export default function Footer({ links }) {
                   </li>
                 ))}
               </ul>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.5 }}
+            </div>
+            <div
             >
               <h2 className="footer-title">What we do?</h2>
               <ul className="mt-4 leading-8">
@@ -84,11 +74,8 @@ export default function Footer({ links }) {
                   <a href="#services">Roof Cleaning</a>
                 </li>
               </ul>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.5 }}
+            </div>
+            <div
             >
               <h2 className="footer-title">Contact info</h2>
               <ul className="mt-4">
@@ -130,13 +117,10 @@ export default function Footer({ links }) {
                   </a>
                 </li>
               </ul>
-            </motion.div>
+            </div>
           </div>
         </div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+        <div
           className="py-3 border-t border-slate-500 flex flex-col lg:flex-row lg:justify-between gap-3"
         >
           <p className="text-slate-300 text-center">
@@ -184,7 +168,7 @@ export default function Footer({ links }) {
               </a>
             </li>
           </ul>
-        </motion.div>
+        </div>
       </div>
     </footer>
   );
