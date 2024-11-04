@@ -84,7 +84,7 @@ export default function Services() {
               whileHover={{ scale: 0.95 }}
               className={`h-80 ${
                 index === 0 || index === 5 ? "col-span-2" : "col-span-1"
-              } overflow-hidden bg-center bg-cover relative`}
+              } overflow-hidden bg-center bg-cover rounded-lg relative`}
               style={{ backgroundImage: `url(${item.image})` }}
               key={index}
             >
@@ -107,7 +107,7 @@ export default function Services() {
                 index === 0 || index === 3 || index === 4
                   ? "col-span-2"
                   : "col-span-1"
-              } overflow-hidden bg-center bg-cover relative`}
+              } overflow-hidden bg-center bg-cover rounded-lg relative`}
               style={{ backgroundImage: `url(${item.image})` }}
               key={index}
             >
@@ -126,7 +126,7 @@ export default function Services() {
         <div className="grid grid-cols-1 gap-6 sm:hidden">
           {services.map((item, index) => (
             <div
-              className={`h-80 overflow-hidden bg-center bg-cover relative`}
+              className={`h-80 overflow-hidden bg-center bg-cover rounded-lg relative`}
               style={{ backgroundImage: `url(${item.image})` }}
               key={index}
             >

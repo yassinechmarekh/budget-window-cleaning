@@ -63,21 +63,21 @@ export default function Faq() {
             similique dignissimos quisquam vel ex corrupti.
           </p>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6"
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {faq.map((item, index) => (
-            <div key={index}>
+            <motion.div
+              key={index}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
               <h3 className="text-blue-900 text-xl font-semibold mb-2">
                 {item.question}
               </h3>
               <p className="text-slate-600">{item.answer}</p>
-            </div>
+            </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
