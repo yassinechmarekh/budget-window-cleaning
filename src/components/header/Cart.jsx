@@ -66,7 +66,7 @@ export default function Cart({ statusCart, setstatusCart }) {
           <a href="https://www.youtube.com/@BudgetWC" target="_blank" className="cart-social-list">
             <FaYoutube size={16} />
           </a>
-          <a href="#" className="cart-social-list">
+          <a href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364" target="_blank" className="cart-social-list">
             <IoChatbox size={16} />
           </a>
         </div>

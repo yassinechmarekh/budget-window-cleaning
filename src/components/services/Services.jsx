@@ -60,8 +60,8 @@ export default function Services() {
                 What we do?
               </h3>
             </div>
-            <h1 className="text-4xl font-bold leading-20 text-blue-900 second-font">
-              We work many fields to clean your surrounding area
+            <h1 className="text-4xl font-bold leading-20 text-blue-900 second-font capitalize">
+            We Offer Diverse Cleaning Solutions for Your Space
             </h1>
           </div>
           <motion.a

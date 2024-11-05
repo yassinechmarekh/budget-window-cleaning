@@ -58,9 +58,9 @@ export default function Faq() {
             Frequently asked questions
           </h1>
           <p className="mt-3 text-slate-600">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            commodi nam, ea quo ipsa laudantium ad amet voluptatem quae, aut
-            similique dignissimos quisquam vel ex corrupti.
+            Find answers to common questions about our cleaning services,
+            pricing, scheduling, and more. Get the information you need to make
+            the best choice for your home or office cleaning needs.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

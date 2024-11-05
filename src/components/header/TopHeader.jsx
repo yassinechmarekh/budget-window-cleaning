@@ -51,7 +51,7 @@ export default function () {
               <a href="https://www.youtube.com/@BudgetWC" target="_blank" className="navbar-social-link">
                 <FaYoutube size={18} />
               </a>
-              <a href="#" className="navbar-social-link">
+              <a href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364" target="_blank" className="navbar-social-link">
                 <IoChatbox size={15} />
               </a>
             </li>

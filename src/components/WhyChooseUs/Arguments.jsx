@@ -12,31 +12,31 @@ export default function Arguments() {
       image: argementImg1,
       title: "Experienced Staff",
       description:
-        "Office Services Sweeping Mopping Kitchen Cleaning, Equipped with the most modern appliances Services",
+        "Our team specializes in office cleaning, sweeping, mopping, and kitchen sanitation, using advanced equipment for the best results.",
     },
     {
       image: argementImg2,
       title: "Natural Products",
       description:
-        "Cleaning and sanitizing may be the most important aspects of a clean and stored in a clean, sanitary manner",
+        "We use natural, eco-friendly cleaning products to ensure a safe and sanitary environment for you and your family.",
     },
     {
       image: argementImg3,
       title: "Fast Service",
       description:
-        "We provide you the best service quality with best rate all the time no matter you're looking for residential or commercial",
+        "Count on us for quick and dependable cleaning services at competitive rates, tailored for both homes and businesses.",
     },
     {
       image: argementImg4,
       title: "Best Equipment",
       description:
-        "We make sure that we had all the tools and equipment you need to provide high-quality service to our clients",
+        "Equipped with state-of-the-art tools, we guarantee a thorough and efficient cleaning service every time.",
     },
   ];
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
       {argument.map((item,index) => (
-        <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ duration: 0.3, ease: "easeInOut" }} className="hover:scale-95 transition duration-300 ease-in-out" key={index}>
+        <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileHover={{ scale:0.9 }} transition={{ duration: 0.3, ease: "easeInOut" }} key={index}>
           <div className="p-3 bg-blue-100 w-20 rounded-2xl">
             <img src={item.image} alt="" className="w-full" />
           </div>

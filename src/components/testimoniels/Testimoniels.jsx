@@ -7,10 +7,10 @@ import { MdOutlineCleaningServices } from "react-icons/md";
 import { MdArrowOutward } from "react-icons/md";
 import { LiaStarSolid } from "react-icons/lia";
 
-import testimonialImg1 from "../../assets/images/testimoniels/01.webp";
-import testimonialImg2 from "../../assets/images/testimoniels/02.webp";
-import testimonialImg3 from "../../assets/images/testimoniels/03.webp";
-import testimonialImg4 from "../../assets/images/testimoniels/04.webp";
+import testimonialImg1 from "../../assets/images/testimoniels/Danny-Green.webp";
+import testimonialImg2 from "../../assets/images/testimoniels/Richard-Mayer.webp";
+import testimonialImg3 from "../../assets/images/testimoniels/John-Tobik.webp";
+import testimonialImg4 from "../../assets/images/testimoniels/Laura-Hall.webp";
 
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -19,35 +19,35 @@ export default function Testimoniels() {
   const testimonials = [
     {
       comment:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil tempore impedit quia suscipit molestiae.",
+        "Been using Budget Window Cleaning for years. Twice a year I have them clean all windows & my sunroom inside and out. They always do a good job & are fair priced, efficient & courteous!",
       image: testimonialImg1,
-      name: "Moe Ammar",
+      name: "Danny Green",
       rating: 5,
-      date: "27/03/2023",
+      date: "18/04/2017",
     },
     {
       comment:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil tempore impedit quia suscipit molestiae.",
+        "Ben and Jeremy did a very good job! They were attentive to our questions about the work and were very respectful working throughout our home. I definitely recommend them!",
       image: testimonialImg2,
-      name: "Jeff Adams",
+      name: "Richard Mayer",
       rating: 5,
-      date: "19/08/2022",
+      date: "07/08/2025",
     },
     {
       comment:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil tempore impedit quia suscipit molestiae.",
+        "Budget Window Cleaning did an excellent job cleaning our siding, windows and roof. Mike and his helper were very pleasant and easy to deal with. I'd recommend their services.",
       image: testimonialImg3,
-      name: "Farhan Rio",
-      rating: 4,
-      date: "10/01/2022",
+      name: "John Tobik",
+      rating: 5,
+      date: "13/05/2017",
     },
     {
       comment:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil tempore impedit quia suscipit molestiae.",
+        "They did an amazing job .. a hidden spot of algae was above a peak of the roof and they got to it with no problem.. great team ! Would recommend because my windows and siding are sparkling!!",
       image: testimonialImg4,
-      name: "Amy Herzog",
+      name: "Laura Hall",
       rating: 5,
-      date: "05/09/2024",
+      date: "05/07/2025",
     },
   ];
   return (
@@ -118,7 +118,7 @@ export default function Testimoniels() {
                     <img
                       src={item.image}
                       alt=""
-                      className="w-20 rounded-full p-1 border-2 border-blue-500"
+                      className="w-16 rounded-full p-1 border-2 border-blue-500"
                     />
                     <div>
                       <div className="mb-1">

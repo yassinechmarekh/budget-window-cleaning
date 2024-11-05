@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
               className="py-2 px-4 bg-transparent hover:bg-blue-600 text-blue-600 hover:text-white flex items-center gap-1 border border-blue-600 rounded-3xl w-fit transition-colors duration-300 ease-in-out"
               whileTap={{ scale: 0.9 }}
             >
-              <span>know more</span>
+              <span className="capitalize">Learn More</span>
               <MdArrowOutward size={20} />
             </motion.a>
           </motion.div>

@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 import ModalVideo from "./ModalVideo";
 
@@ -15,24 +15,34 @@ export default function Hero() {
   return (
     <section className="flex flex-col lg:flex-row" id="home">
       <div className="w-full lg:w-1/2 bg-blue-100 relative">
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 1.2 }} className="h-40 sm:h-60 2xl:h-72 absolute left-0 bottom-0 z-0">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+          className="h-40 sm:h-60 2xl:h-72 absolute left-0 bottom-0 z-0"
+        >
           <img src={cleaningMop} alt="" className="h-full opacity-30" />
         </motion.div>
-        <motion.div className="pt-10 pb-20 sm:py-20" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.3 }}>
+        <motion.div
+          className="pt-10 pb-20 sm:py-20"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.3 }}
+        >
           <div className="container">
             <div className="flex items-center gap-1">
               <img src={cleaningCheck} alt="cleaning stars" className="w-6" />
-              <h4 className="text-xl sm:text-2xl text-blue-500 font-semibold second-font">
-                We are budget window cleaning
+              <h4 className="text-xl sm:text-2xl text-blue-500 font-semibold second-font capitalize">
+                Affordable Window Cleaning Experts
               </h4>
             </div>
-            <h1 className="mt-1 mb-4 text-blue-900 text-4xl sm:text-6xl font-bold second-font">
-              We are the best cleaning agency
+            <h1 className="mt-1 mb-4 text-blue-900 text-4xl sm:text-6xl font-bold second-font capitalize">
+              The Best Cleaning Agency You Can Trust
             </h1>
             <p className="text-slate-600 text-sm sm:text-base">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-              possimus necessitatibus quo error dolorum at qui earum saepe
-              pariatur dignissimos!
+              Professional, budget-friendly window cleaning for spotless results
+              in homes and businesses. Contact us today to make your windows
+              shine!
             </p>
             <div className="flex items-center gap-4 mt-4">
               <motion.a
@@ -41,9 +51,7 @@ export default function Hero() {
                 className="main-btn z-10"
                 whileTap={{ scale: 0.9 }}
               >
-                <span>
-                  start now
-                </span>
+                <span>start now</span>
                 <MdArrowOutward size={20} />
               </motion.a>
               <motion.button
