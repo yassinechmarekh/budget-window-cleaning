@@ -48,6 +48,7 @@ export default function Hero() {
               <motion.a
                 href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364"
                 target="_blank"
+                aria-label="startnow"
                 className="main-btn z-10"
                 whileTap={{ scale: 0.9 }}
               >
@@ -58,6 +59,7 @@ export default function Hero() {
                 className="p-3 bg-blue-900 hover:bg-blue-800 text-white rounded-full transition-colors duration-300 ease-in-out"
                 onClick={() => setmodalVideo(true)}
                 whileTap={{ scale: 0.9 }}
+                aria-label="playvideo"
               >
                 <FaPlay size={16} />
               </motion.button>

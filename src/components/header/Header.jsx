@@ -50,6 +50,7 @@ export default function Header({ links }) {
             <a
               href="/"
               className="py-2 pr-4 text-white text-xl font-bold flex items-center w-fit xl:border-r xl:border-slate-500"
+              aria-label="logo"
             >
               <img src={logo} alt="logo" className="w-14" />
               <h1 className="uppercase leading-4 sm:leading-6 italic text-base sm:text-xl">
@@ -62,11 +63,12 @@ export default function Header({ links }) {
                 <li
                   key={index}
                   className={`hover:text-blue-500 transition-all duration-200 ease-in-out ${
-                    currentMenu === link ? "text-blue-500 font-semibold" : ""
+                    currentMenu === link ? "text-blue-300 font-semibold" : ""
                   }`}
                 >
                   <a
                     href={`#${link.replace(/\s+/g, "").toLowerCase()}`}
+                    aria-label="menu"
                     onClick={() => handleCurrentMenu(link)}
                   >
                     {link}
@@ -80,6 +82,7 @@ export default function Header({ links }) {
                   href="tel:+14409341545"
                   className="p-3 bg-blue-100 rounded-full border-2 border-blue-500 animate-pulse"
                   whileTap={{ scale:0.9 }}
+                  aria-label="phone"
                 >
                   <FaPhoneVolume size={18} className="text-blue-500" />
                 </motion.a>
@@ -90,6 +93,7 @@ export default function Header({ links }) {
                   <a
                     href="tel:+14409341545"
                     className="text-white hover:text-blue-300 font-semibold"
+                    aria-label="phone"
                   >
                     +1440 934-1545
                   </a>
@@ -98,6 +102,7 @@ export default function Header({ links }) {
               <button
                 className="bg-blue-500 px-3 h-full text-white hover:bg-blue-200 hover:text-blue-500 transition-colors duration-300 ease-in-out"
                 onClick={() => setstatusCart(true)}
+                aria-label="opencart"
               >
                 <IoMdMenu size={24} />
               </button>

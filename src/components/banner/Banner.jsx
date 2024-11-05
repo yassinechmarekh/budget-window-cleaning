@@ -21,7 +21,7 @@ export default function Banner() {
               We love what we do and we do it with passion. We value the
               experimentation of the message and smart incentives.
             </p>
-            <motion.a whileTap={{ scale:0.9 }} href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364" target="_blank" className="main-btn w-fit hover:bg-blue-700">
+            <motion.a whileTap={{ scale:0.9 }} href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364" target="_blank" aria-label="startnow" className="main-btn w-fit hover:bg-blue-700">
               <span>start now</span>
               <MdArrowOutward size={20} />
             </motion.a>

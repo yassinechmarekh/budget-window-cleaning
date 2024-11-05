@@ -36,22 +36,23 @@ export default function () {
                 <a
                   href="mailto:mike@budgetwindowcleaning.com"
                   className="hover:text-blue-300 transition-colors duration-300"
+                  aria-label="mail"
                 >
                   mike@budgetwindowcleaning.com
                 </a>
               </div>
             </li>
             <li className="text-slate-300 flex items-center gap-3">
-              <a href="https://www.facebook.com/BudgetWindowCleaningOhio/" target="_blank" className="navbar-social-link">
+              <a href="https://www.facebook.com/BudgetWindowCleaningOhio/" target="_blank" aria-label="facebook" className="navbar-social-link">
                 <FaFacebookF size={14} />
               </a>
-              <a href="https://www.instagram.com/cleaningbudget/" target="_blank" className="navbar-social-link">
+              <a href="https://www.instagram.com/cleaningbudget/" target="_blank" aria-label="instagram" className="navbar-social-link">
                 <FaInstagram size={16} />
               </a>
-              <a href="https://www.youtube.com/@BudgetWC" target="_blank" className="navbar-social-link">
+              <a href="https://www.youtube.com/@BudgetWC" target="_blank" aria-label="youtube" className="navbar-social-link">
                 <FaYoutube size={18} />
               </a>
-              <a href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364" target="_blank" className="navbar-social-link">
+              <a href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364" target="_blank" aria-label="appointment" className="navbar-social-link">
                 <IoChatbox size={15} />
               </a>
             </li>

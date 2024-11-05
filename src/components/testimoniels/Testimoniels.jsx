@@ -73,6 +73,7 @@ export default function Testimoniels() {
           <a
             href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364"
             target="_blank"
+            aria-label="startnow"
             className="main-btn hidden sm:flex"
           >
             <span>start now</span>

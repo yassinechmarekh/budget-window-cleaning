@@ -19,6 +19,7 @@ export default function Footer({ links }) {
               <a
                 href="/"
                 className="py-2 pr-4 text-white text-xl font-bold flex items-center"
+                aria-label="logo"
               >
                 <img src={logo} alt="logo" className="w-14" />
                 <h1 className="uppercase leading-4 sm:leading-6 italic text-base sm:text-xl">
@@ -44,7 +45,7 @@ export default function Footer({ links }) {
               <ul className="mt-4 leading-8">
                 {links.map((link, index) => (
                   <li key={index} className="footer-list-links">
-                    <a href={`#${link.replace(/\s+/g, "").toLowerCase()}`}>
+                    <a href={`#${link.replace(/\s+/g, "").toLowerCase()}`} aria-label="menu">
                       {link}
                     </a>
                   </li>
@@ -56,22 +57,22 @@ export default function Footer({ links }) {
               <h2 className="footer-title">What we do?</h2>
               <ul className="mt-4 leading-8">
                 <li className="footer-list-links">
-                  <a href="#services">House Washing</a>
+                  <a href="#services" aria-label="services">House Washing</a>
                 </li>
                 <li className="footer-list-links">
-                  <a href="#services">Window Cleaning</a>
+                  <a href="#services" aria-label="services">Window Cleaning</a>
                 </li>
                 <li className="footer-list-links">
-                  <a href="#services">Gutter Cleaning</a>
+                  <a href="#services" aria-label="services">Gutter Cleaning</a>
                 </li>
                 <li className="footer-list-links">
-                  <a href="#services">Driveways and Walkways</a>
+                  <a href="#services" aria-label="services">Driveways and Walkways</a>
                 </li>
                 <li className="footer-list-links">
-                  <a href="#services">Deck Washing</a>
+                  <a href="#services" aria-label="services">Deck Washing</a>
                 </li>
                 <li className="footer-list-links">
-                  <a href="#services">Roof Cleaning</a>
+                  <a href="#services" aria-label="services">Roof Cleaning</a>
                 </li>
               </ul>
             </div>
@@ -87,6 +88,7 @@ export default function Footer({ links }) {
                   <a
                     href="https://maps.app.goo.gl/gRBLVwviLtySaXSeA"
                     target="_blank"
+                    aria-label="address"
                     className="footer-contactinfo-text"
                   >
                     5210 Parkhurst Dr, Sheffield, OH, United States, Ohio
@@ -100,6 +102,7 @@ export default function Footer({ links }) {
                   <a
                     href="tel:+14409341545"
                     className="footer-contactinfo-text"
+                    aria-label="phone"
                   >
                     +1 440 934-1545
                   </a>
@@ -112,6 +115,7 @@ export default function Footer({ links }) {
                   <a
                     href="mailto:mike@budgetwindowcleaning.com"
                     className="footer-contactinfo-text"
+                    aria-label="mail"
                   >
                     mike@budgetwindowcleaning.com
                   </a>
@@ -132,6 +136,7 @@ export default function Footer({ links }) {
             <a
               href="https://yassine-chmarekh.vercel.app/"
               target="_blank"
+              aria-label="portfolio"
               className="text-white font-semibold hover:text-blue-300 transition-colors duration-300 ease-in-out"
             >
               Yassine_ChM
@@ -141,7 +146,7 @@ export default function Footer({ links }) {
             <li className="footer-social-list">
               <a
                 href="https://www.facebook.com/BudgetWindowCleaningOhio/"
-                target="_blank"
+                target="_blank" aria-label="facebook"
               >
                 <FaFacebookF size={20} />
               </a>
@@ -150,12 +155,13 @@ export default function Footer({ links }) {
               <a
                 href="https://www.instagram.com/cleaningbudget/"
                 target="_blank"
+                aria-label="instagram"
               >
                 <FaInstagram size={20} />
               </a>
             </li>
             <li className="footer-social-list">
-              <a href="https://www.youtube.com/@BudgetWC" target="_blank">
+              <a href="https://www.youtube.com/@BudgetWC" target="_blank" aria-label="youtube">
                 <FaYoutube size={20} />
               </a>
             </li>
@@ -163,6 +169,7 @@ export default function Footer({ links }) {
               <a
                 href="https://www.thumbtack.com/oh/sheffield-lake/pressure-washing/budget-window-cleaning-company/service/227731913551545364"
                 target="_blank"
+                aria-label="appointement"
               >
                 <IoChatbox size={20} />
               </a>
