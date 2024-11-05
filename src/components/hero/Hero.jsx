@@ -70,7 +70,7 @@ export default function Hero() {
       <div
         className="w-full lg:w-1/2 h-[450px] sm:h-[550px] 2xl:h-[650px] bg-cover bg-center"
         style={{ backgroundImage: `url(${heroImg})` }}
-        alt=""
+        alt="hero image"
       ></div>
       {modalVideo && <ModalVideo setmodalVideo={setmodalVideo} />}
     </section>

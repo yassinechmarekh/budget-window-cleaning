@@ -24,7 +24,7 @@ export default function Cart({ statusCart, setstatusCart }) {
         <a href="/" className="flex items-center" aria-label="logo">
           <img src={logo} alt="logo" className="w-24" />
           <h1 className="text-2xl font-bold italic uppercase leading-6 text-blue-900">
-            budget <span className="block text-blue-400">window cleaning</span>
+            budget <span className="block text-blue-300">window cleaning</span>
           </h1>
         </a>
         <p className="text-center text-slate-600">

@@ -62,7 +62,7 @@ export default function Header({ links }) {
               {links.map((link, index) => (
                 <li
                   key={index}
-                  className={`hover:text-blue-500 transition-all duration-200 ease-in-out ${
+                  className={`hover:text-blue-300 transition-all duration-200 ease-in-out ${
                     currentMenu === link ? "text-blue-300 font-semibold" : ""
                   }`}
                 >
